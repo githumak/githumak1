@@ -115,7 +115,7 @@ function processMessage($message) {
     apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => 'I understand only text messages'));
   }
 }
-define('WEBHOOK_URL', 'https://github.com/githumak/githumak1/easy.php/');
+define('WEBHOOK_URL', 'https://github.com/githumak/githumak1/blob/master/easy.php');
 if (php_sapi_name() == 'cli') {
   // if run from console, set or delete webhook
   apiRequest('setWebhook', array('url' => isset($argv[1]) && $argv[1] == 'delete' ? '' : WEBHOOK_URL));
